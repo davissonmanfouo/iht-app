@@ -1,0 +1,29 @@
+.nav{
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 60px;line-height: 60px;
+    display: block;
+    text-align: center;
+    background-color: #D8D8D8;
+    border-top: 1px solid silver;
+    color: white;
+    font-size: 13px;
+    overflow: hidden;
+    a{
+        display: block;
+        width: 25%;
+        height: 60px;line-height: 60px;
+        float: left;
+        color: black;
+
+    }
+    i{
+        margin-top: 15px;
+    }        
+    a:active{
+        color:#4f597b ;
+    }
+
+
+    
+}

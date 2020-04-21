@@ -1,0 +1,9 @@
+<header class="header">
+
+                <!-- <a routerLink="auth/signin" *ngIf="!isAuth">Connexion</a> -->
+
+
+                <!-- <a routerLink="auth/signup" *ngIf="!isAuth" (click) = "hideLogIn()" (click) = "hideLogIn()" >Inscription</a> -->
+                <a (click) = "onSignOut()" *ngIf="isAuth" style="cursor: pointer;color: blanchedalmond;">Log out</a>
+    <img src="../assets/images/logo-piste.png"  alt="Iht-app" class="ihtLogo">
+</header>

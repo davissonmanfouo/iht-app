@@ -1,0 +1,7 @@
+<nav class="nav">
+    <p *ngIf="!isAuth" style="color:black;">@2020 All Rights Reserved</p>
+    <a routerLink="../home" routerLinkActive ="active" [routerLinkActiveOptions] = "{exact: true}"*ngIf="isAuth"><i class="fas fa-home" style="font-size: 25px;"></i></a>
+    <a routerLink="../chat" routerLinkActive ="active" *ngIf="isAuth"><i class="fas fa-comments" style="font-size: 25px;"></i></a>
+    <a routerLink="../calendar" routerLinkActive ="active" *ngIf="isAuth"><i class="fas fa-calendar" style="font-size: 25px;"></i></a>
+    <a routerLink="../settings" routerLinkActive ="active" *ngIf="isAuth"><i class="fas fa-cog" style="font-size: 25px;"></i></a>
+</nav>

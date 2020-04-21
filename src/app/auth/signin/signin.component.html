@@ -1,0 +1,21 @@
+<div class="col-sm-10 col-md-9 col-lg-5 col-12" id="myDIV" style="margin: 0px auto;">
+  <div class="lock">
+    <div class="unlock-img">
+      <img src="../../../assets/images/unlock.png" alt="Lock">
+    </div>
+    
+  </div>
+    <form [formGroup] = "signInForm" (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+          <input class="form-control" id="email" type="text"  placeholder="Adresse Email" formControlName = "email">
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="exampleConfirmPassword" type="password" placeholder="Mot de passe" formControlName = "password">
+        </div>
+        <button class="btn btn-block text-white" style="background-color: #4f597b;font-size: 20px;" type="submit" [disabled]="signInForm.invalid">Connexion <i class="fas fa-user-graduate" style="font-size:20px;color:white;"></i></button>
+    </form><br>
+    <p>Vous n’avez pas de compte  ?<font color="#4d9d2a" style="cursor: pointer;" routerLinkActive="active"><a routerLink="../../auth/signup">Inscrivez-vous</a></font></p> 
+</div>
+<div class="container">
+  <p>{{ errorMessage }}</p>
+</div>

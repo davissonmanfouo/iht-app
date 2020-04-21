@@ -1,0 +1,40 @@
+.ihtLogo{
+    height: 50px;
+}
+
+.header{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: auto; line-height: 60px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    // background-color: #4f597b;
+    background-color: #4f597b;
+
+    
+
+}
+.view{
+    position: absolute;
+    top: 150px;left: 0;right: 0;bottom: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+input{border: 1px solid gray;background-color: rgb(250, 250, 250);}
+input::-webkit-input-placeholder {
+    color: black !important;
+    }
+    input:-moz-placeholder { /* Firefox 18- */
+    color: black !important; 
+    }
+    input::-moz-placeholder { /* Firefox 19+ */
+    color: black !important; 
+    }
+    input:-ms-input-placeholder { 
+    color: black !important; 
+    }
+
+    
